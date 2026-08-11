@@ -16,7 +16,7 @@ public static class CommunityEndpoints
         {
             var result = handler.Handle(id);
             return result.IsSuccess
-                ? Results.Ok(id = result.Value!.Id)
+                ? Results.Ok(new { id = result.Value!.Id, name = result.Value!.Name.Value })
                 : Results.NotFound(result.Error);
         });
 

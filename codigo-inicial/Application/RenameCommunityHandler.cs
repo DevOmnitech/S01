@@ -13,9 +13,10 @@ public sealed class RenameCommunityHandler
         if (community == null)
             return Result.Fail<Community>("Comunidad no encontrada");
 
+        var oldName = community.Name.Value;
         var renamed = _repository.Rename(community, newName);
 
-        _logger.LogInformation("Comunidad renombrada {CommunityId} {OldName} -> {NewName}", renamed.Id, community.Name.Value, renamed.Name.Value);
+        _logger.LogInformation("Comunidad renombrada {CommunityId} {OldName} -> {NewName}", renamed.Id, oldName, renamed.Name.Value);
 
         return Result.Ok(renamed);
     }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RedditClone.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2016350ab418c728e912382ca9232bd9e3d0e6c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ea9bb614e1316ff85e9c9f3047eec208e3b9384")]
 [assembly: System.Reflection.AssemblyProductAttribute("RedditClone.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RedditClone.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

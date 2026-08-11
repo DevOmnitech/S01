@@ -19,9 +19,7 @@ public sealed class InMemoryCommunityRepository : ICommunityRepository
         if (existing == null)
             throw new InvalidOperationException("Community not found");
 
-        _items.Remove(existing);
-        community.Name = newName;
-        _items.Add(community);
-        return community;
+        existing.Name = newName;
+        return existing;
     }
 }

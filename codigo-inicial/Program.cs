@@ -18,7 +18,7 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("Default")
     ?? throw new InvalidOperationException("Falta la connection string 'Default'.");
 
-builder.Services.AddScoped<ICommunityRepository, InMemoryCommunityRepository>();
+builder.Services.AddSingleton<ICommunityRepository, InMemoryCommunityRepository>();
 builder.Services.AddScoped<CreateCommunityHandler>();
 builder.Services.AddScoped<GetCommunityHandler>();
 builder.Services.AddScoped<RenameCommunityHandler>();

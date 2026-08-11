@@ -39,7 +39,7 @@ Senala el archivo/clase donde se ve cada principio.
 > Si registrara `InMemoryCommunityRepository` como **Singleton** y adentro le
 > pidiera un servicio **Scoped**, que pasaria al arrancar la app? Por que?
 
-Tu respuesta: Marcaria un error al compilar
+Tu respuesta: Aqui esta el truco, al intentar hacer las consultas como InMemoryCommunityRepository esta en un principio como Scoped, esto rompe los ciclos de vida, ya que el dato que debe persistir, no lo almacena, aqui esta el truco
 
 ---
 
@@ -48,7 +48,7 @@ Tu respuesta: Marcaria un error al compilar
 Que abstraccion consideraste agregar y decidiste **NO** agregar (o quitaste)?
 Por que no la necesitas hoy?
 
-Tu respuesta: RenameCommunityHandler y su metodo, y las abstracciones de sus dependencias, y de momento no veo necesaria ninguna abstraccion
+Tu respuesta: RenameCommunity y GetCommunity y su metodo, y las abstracciones de sus dependencias, y de momento no veo necesaria ninguna abstraccion
 
 ---
 
