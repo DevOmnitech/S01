@@ -11,14 +11,14 @@
 
 Lista los problemas del `Program.cs` original y el principio que viola cada uno.
 
-| # | Smell (que estaba mal) | Principio violado | Como lo arregle |
-|---|------------------------|-------------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
+| #   | Smell (que estaba mal) | Principio violado | Como lo arregle |
+| --- | ---------------------- | ----------------- | --------------- |
+| 1   |                        |                   |                 |
+| 2   |                        |                   |                 |
+| 3   |                        |                   |                 |
+| 4   |                        |                   |                 |
+| 5   |                        |                   |                 |
+| 6   |                        |                   |                 |
 
 ---
 
